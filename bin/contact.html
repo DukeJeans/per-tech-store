@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Technology Store</title>
+        <title>Technology Store: Contact</title>
     </head>
     <body>
         <header>
@@ -10,8 +10,8 @@
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a>></li> |
-                    <li><a href="#product-previews">Shop</a>></li> |
-                    <li><a href="./bin/contact.html">Contact Us</a>></li>
+                    <li><a href="../index.html">Shop</a>></li> |
+                    <li><a href="./contact.html">Contact Us</a>></li>
                 </ul>
             </nav>  
         </header>   
@@ -42,44 +42,41 @@
         </aside>
        
         <main id="product-previews"> <!--Use's pp prefix-->
-            <h2>All Items:</h2>
-            <div id="pp-chromecast-ultra">
-                <a href="./bin/product-detail.html">
-                    <img src="../media/product-images/chromecast-ultra.png" alt="Image of Chromecast Ultra">                    
-                </a>
-                <a href="./bin/product-detail.html">
-                    <h4>Chromecast Ultra</h4>
-                </a>  
-                <p>$ 69</p>
-                <p>The <strong>Chromecast Ultra</strong><br>
-                    provides fast 4k video.</p>
-                <p>
-                    <a href="./bin/product-detail.html">More Info</a>
-                    <a href="">Add to Cart</a>
-                </p>
-            </div>
+            <h2>Contact Us</h2>
             
-            <table>
-                <caption>Buy in bulk and save!</caption>
-                <thead>
-                    <tr>
-                        <th>Quantity</th>
-                        <th>1</th>
-                        <th>2-3</th>
-                        <th>5-10</th>
-                        <th>10+</th>
-                    </tr>  
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Price</td>
-                        <td>$69</td>
-                        <td>$60</td>
-                        <td>$50</td>
-                        <td>$35</td>
-                    </tr>
-                </tbody>
-            </table>
+            <form>
+              <div>
+                <label for="name">Name: </label>
+                <input type="text" placeholder="Enter your name" id="name" name="name">          
+              </div>
+              <div>
+                <label for="email">Email: </label>
+                <input type="email" placeholder="Enter your email" id="email" name="email">
+              </div>
+              <div>
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" cols="30" rows="5"></textarea > 
+              </div>
+              <div>
+                <p>Subscribe to future offers by:</p>
+                <label for="newsletter">Newsletter</label>
+                <input type="checkbox" id="newsletter" name="subscribe" value="newsletter">
+                
+                <label for="email">Email</label>
+                <input type="checkbox" id="email" name="subscribe" value="email">
+                
+                <label for="post">Post</label>
+                <input type="checkbox" id="post" name="subscribe" value="post">
+              </div>
+              <div>
+                <p>How would you like us to respond?</p>
+                <label for="phoneResponse">Phone</label>
+                <input type="radio" id="response">
+                
+                <label for="emailResponse">Email</label>
+                <input type="radio" id="response">
+              </div>
+            </form>
             
         </main>
         
