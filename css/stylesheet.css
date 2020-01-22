@@ -1,0 +1,59 @@
+html {
+  background: #f7f7f7;    
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  
+  background: white;
+  max-width: 1370px;
+  margin: 0 auto;
+}
+
+header, footer {
+  background: #004080;
+  color: white;
+}
+
+.product {
+  box-sizing: border-box;
+  border: 3px solid grey;
+  width: 260px;
+  margin: 5px 20px;
+  padding: 5px;
+  
+  display: inline-block;
+}
+
+.productButton {
+  padding: 0 15px;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline;
+}
+
+header h1, nav {
+  display: inline-block;
+}
+
+main {
+  width: 1000px;
+  display: inline-block;
+}
+
+aside {
+  width: 270px;
+  display: inline-block;
+  vertical-align: top;
+}
