@@ -6,7 +6,9 @@
         
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/stylesheet.css">
+        <link rel="icon" href="../media/icons/favicon.ico">
     </head>
+    
     <body>
         <header>
             <h1>Online Technology Store</h1>
@@ -49,41 +51,22 @@
             <h2>Contact Us</h2>
             
             <form>
-              <div>
+              <div class="inline">
                 <label for="name">Name: </label>
                 <input type="text" placeholder="Enter your name" id="name" name="name">          
               </div>
               
-              <div>
+              <div class="inline">
                 <label for="email">Email: </label>
                 <input type="email" placeholder="Enter your email" id="email" name="email">
               </div>
               
-              <div>
+              <div class="inline">
                 <label for="message">Message: </label>
                 <textarea id="message" name="message" cols="30" rows="5"></textarea > 
               </div>
               
-              <!-- <div>
-                  <label for="subject">Subject: </label>
-                  <select id="subject">
-                      <optgroup label="Product Issues">
-                        <option value="returns">Returns</option>
-                        <option value="faulty">Faulty Item</option>
-                      </optgroup>
-                      
-                      <optgroup label="Delivery">
-                        <option value="delivery">Delivery Info</option>
-                        <option value="tracking">Order Tracking</option>
-                      </optgroup>
-                      
-                      <optgroup label="Other">
-                        <option value="advice">Advice</option>
-                        <option value="other">Other Inquiries</option>
-                      </optgroup>
-                  </select>
-              </div> -->
-              <div>
+              <div class="inline">
                   <label for="subjectInput">Subject: </label>
                   <input type="text" list="subjectDL" id="subjectInput" placeholder="Enter your subject">
                   <datalist id="subjectDL">

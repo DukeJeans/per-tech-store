@@ -1,18 +1,33 @@
 html {
-  background: #f7f7f7;    
+  background: #f7f7f7;  
+  font-size: 16px;  
 }
 
 body {
   font-family: 'Poppins', sans-serif;
+  color: rgb(49,46,46);
   
   background: white;
-  max-width: 1370px;
+  max-width: 90vw;
   margin: 0 auto;
 }
 
 header, footer {
+  padding: 10px 0;
   background: #004080;
   color: white;
+}
+
+header nav, header > input {
+  float: right;
+  margin: 15px;
+  position: relative;
+  top: 50px
+}
+
+header > input {
+  position: relative;
+  top: 55px;
 }
 
 .product {
@@ -21,13 +36,26 @@ header, footer {
   width: 260px;
   margin: 5px 20px;
   padding: 5px;
+  font-size: 1rem;
   
   display: inline-block;
+}
+
+.product-price {
+  text-align: center;
+  border: 2px solid grey;
+  margin: 0 90px;
 }
 
 .productButton {
   padding: 0 15px;
   display: inline-block;
+}
+
+.cartButton {
+  padding: 10px;
+  background: darkblue;
+  color: white;
 }
 
 img {
@@ -39,21 +67,78 @@ ul {
   padding: 0;
 }
 
-header li {
+li {
+  list-style: inside url(../media/icons/list-icon.png);
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:nth-of-type(2), a:nth-of-type(3) {
+  text-align: center;
+}
+
+a:hover {
+  color: #0e69e9
+}
+
+header li, footer li {
   display: inline;
+}
+
+footer li {
+  padding: 0 10px 0 10px;
+  list-style: none;
 }
 
 header h1, nav {
   display: inline-block;
+  padding: 0 10px;
 }
 
 main {
   width: 1000px;
   display: inline-block;
+  font-size: 12px;
 }
 
 aside {
   width: 270px;
   display: inline-block;
   vertical-align: top;
+  padding: 0 0 0 10px;
+}
+
+/* Product Detail Page */
+.product-detail {
+  width: 660px;
+}
+
+.product-detail img {
+  max-width: 50%;
+  float: left;
+}
+
+/* Contact Us Page */
+form {
+  padding: 10px;
+  margin: 10px 0;
+  width: 600px;
+}
+
+form > div {
+  margin: 10px 0;
+}
+
+.inline label {
+  width: 100px;
+  display: inline-block;
+}
+
+input[type="text"],input[type="email"] {
+  padding: 10px;
+  width: 300px;
 }
