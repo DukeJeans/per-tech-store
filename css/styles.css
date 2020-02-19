@@ -85,7 +85,6 @@ img {
   float: left;
 }
 
-/* Contact us */
 form {
   padding: 10px;
   margin: 10px 0;
@@ -106,7 +105,6 @@ input[type="text"], input[type="email"], textarea {
   width: 400px;
 }
 
-/* Table */
 table {
   width: 400px;
   text-align: left;
@@ -128,7 +126,28 @@ tr:hover {
   background: #f5f5f5;
 }
 
-@media (min-width: 800px) {
+.divFilter {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.categoryButton {
+  border-radius: 15px;
+}
+
+.categoryButton:hover {
+  background-color: #ddd;
+}
+
+.categoryButton.activeCategoryButton {
+  background-color: #666;
+  color: white;
+}
+
+@media (min-width: 600px) {
 
   input[type="search"] {
     width: 40%;

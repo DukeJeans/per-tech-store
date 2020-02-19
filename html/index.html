@@ -28,14 +28,15 @@
       <section>
         <h3>Category</h3>
         <hr>
-        <ul>
-          <li>All items</li>
-          <li>Cameras</li>
-          <li>Laptops</li>
-          <li>Phones</li>
-          <li>Accessories</li>
-          <li>Other</li>
-        </ul>
+        <div>
+          <ul id="productTypeButtonCtnr">
+            <li><button class="categoryButton activeCategoryButton" onclick="filterSelection('all')">All items</button></li>
+            <li><button class="categoryButton" onclick="filterSelection('devices')">Smart Home Devices</button></li>
+            <li><button class="categoryButton" onclick="filterSelection('laptops')">Laptops</button></li>
+            <li><button class="categoryButton" onclick="filterSelection('phones')">Phones</button></li>
+            <li><button class="categoryButton" onclick="filterSelection('accessories')">Accessories</button></li>
+          </ul>
+        </div> 
       </section>
 
       <section>
@@ -54,7 +55,7 @@
 
     <main>
       <h2>All items:</h2>
-      <div class="product">
+      <div class="product divFilter accessories">
         <a href="product-detail.html">
           <img src="../media/product-images/airpods.png" alt="airpods picture">           
         </a>
@@ -65,7 +66,7 @@
         <a href="" class="button" id="position">Add To Cart</a>
       </div>
 
-      <div class="product">
+      <div class="product divFilter devices accessories">
         <img src="../media/product-images/chromecast-ultra.png" alt="chromecast ultra picture">            
         <h4><a href="">Chromecast Ultra</a></h4>
         <p>$ 99.95</p>
@@ -74,7 +75,7 @@
         <a href="" class="button">Add To Cart</a>
       </div>
 
-      <div class="product">
+      <div class="product divFilter phones">
         <img src="../media/product-images/iphone.png" alt="iphone picture">            
         <h4><a href="">iPhone X</a></h4>
         <p>$ 649.95</p>
@@ -83,7 +84,7 @@
         <a href="" class="button">Add To Cart</a>
       </div>
 
-      <div class="product">
+      <div class="product divFilter devices">
         <img src="../media/product-images/nest-mini.png" alt="nest mini picture">            
         <h4><a href="">Google Nest Mini</a></h4>
         <p>$ 59.95</p>
@@ -92,7 +93,7 @@
         <a href="" class="button">Add To Cart</a>
       </div>
 
-      <div class="product">
+      <div class="product divFilter devices">
         <img src="../media/product-images/nest-thermostat.png" alt="thermostat picture">            
         <h4><a href="">Nest Thermostat</a></h4>
         <p>$ 110.95</p>
@@ -101,7 +102,7 @@
         <a href="" class="button">Add To Cart</a>
       </div>
 
-      <div class="product">
+      <div class="product divFilter laptops">
         <img src="../media/product-images/surface-pro.png" alt="surface pro picture">            
         <h4><a href="">Surface Pro Laptop</a></h4>
         <p>$ 599.95</p>
@@ -122,5 +123,6 @@
       </nav>
     </footer>
 
+  <script src="../js/div-filters.js""></script>
   </body>
 </html>
